@@ -29,15 +29,17 @@ closeMenu.addEventListener("click", () => {
 
 navOptions.forEach((opt) => {
   opt.addEventListener("click", (e) => {
-    const dropDown = e.target.nextElementSibling;
+    if (e.target.matches("p")) {
+      const dropDown = e.target.nextElementSibling;
 
-    //to close the dropdown
+      //to close the dropdown
 
-    if (getComputedStyle(dropDown).display === "flex") {
-      dropDown.style.display = "none";
-      return;
+      if (getComputedStyle(dropDown).display === "flex") {
+        dropDown.style.display = "none";
+        return;
+      }
+      //to display the dropdown
+      dropDown.style.display = "flex";
     }
-    //to display the dropdown
-    dropDown.style.display = "flex";
   });
 });
