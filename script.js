@@ -9,13 +9,13 @@ const navOptions = document.querySelectorAll(".nav-opts");
 menuIcon.addEventListener("click", () => {
   // menuBox.classList.remove("");
   menuBox.classList.remove("translate-x-[25rem]");
-  menuBox.classList.add("-translate-x-[0rem]");
+  // menuBox.classList.add("-translate-x-[0rem]");
 });
 
 //to close the menu bar
 closeMenu.addEventListener("click", () => {
   menuBox.classList.add("translate-x-[25rem]");
-  menuBox.classList.remove("-translate-x-[0rem]");
+  // menuBox.classList.remove("-translate-x-[0rem]");
 
   //to close the dropdown
   const dropDown = document.querySelectorAll(".nav-opts div");
