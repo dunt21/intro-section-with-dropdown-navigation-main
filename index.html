@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link href="/src/output.css" rel="stylesheet" />
+  </head>
+  <body class=" w-screen h-screen relative overflow-x-hidden">
+    <header class="flex justify-between items-center px-5 pt-8 ">
+      <img src="images/logo.svg" />
+      <img src="images/icon-menu.svg" class="icon-menu cursor-pointer"/>
+
+      <div class="bg-black/70 absolute top-0 left-0 w-full h-full z-10 translate-x-[25rem] transition duration-1000  ease-out menu-box ">
+  <nav
+        class="z-20 pt-7 bg-[var(--color-white)] absolute top-0 right-0 h-full w-2/3 px-6 text-[var(--color-gray)] "
+      >
+        <img src="images/icon-close-menu.svg" class="relative left-10/12 close-menu cursor-pointer" />
+
+        <div class="menu mt-10 space-y-5 [&>*]:cursor-pointer ">
+          <div class=" nav-opts">
+            <p>Features <img src="images/icon-arrow-down.svg" /></p>
+
+            <div class="dropdown ">
+              <a class=""><img src="images/icon-todo.svg">Todo list</a>
+              <a><img src="images/icon-calendar.svg">Calender</a>
+              <a><img src="images/icon-reminders.svg">Reminders</a>
+              <a><img src="images/icon-planning.svg">Planning</a>
+            </div>
+          </div>
+          <div class=" nav-opts">
+            <p>
+            Company <img src="images/icon-arrow-down.svg" />
+          <div class="">
+            <a>History</a>
+            <a>Our Team</a>
+            <a>Blog</a>
+
+          </div>
+          
+          </div>
+            </p>
+          <a class="block  hover:text-[var(--color-black)]">Careers</a>
+          <a class="block hover:text-[var(--color-black)]">About</a>
+          
+        <div class="flex flex-col mt-10 space-y-3 [&>button]:cursor-pointer [&>button]:hover:text-[var(--color-black)]">
+          <button>Login</button>
+          <button class="border-[var(--color-gray)] border-2 py-2 rounded-2xl hover:border-[var(--color-black)]">Register</button>
+        </div>
+      </div>
+          </nav>
+      </div>
+
+    
+    </header>
+    <main class="mt-5">
+      <img src="images/image-hero-mobile.png" />
+      <section>
+        <div class="flex flex-col items-center text-center px-3 mt-8 gap-3">
+          <p class="text-4xl font-extrabold text-[var(--color-black)]">
+            Make remote work
+          </p>
+          <p class="text-[var(--color-gray)]">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button
+            class="bg-[var(--color-black)] text-[var(--color-white)] py-3 px-6 rounded-xl font-bold hover:bg-[var(--color-white)] hover:text-[var(--color-black)] hover:border-2 transition duration-300"
+          >
+            Learn more
+          </button>
+        </div>
+        <div class="flex justify-center items-center mt-8 client-box">
+          <img src="images/client-databiz.svg" />
+          <img src="images/client-audiophile.svg" />
+          <img src="images/client-meet.svg" />
+          <img src="images/client-maker.svg" />
+        </div>
+      </section>
+    </main>
+
+    <div
+      class="attribution absolute bottom-0 left-1/2 -translate-x-[50%] w-full transla"
+    >
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Suad</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
