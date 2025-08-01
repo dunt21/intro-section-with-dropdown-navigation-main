@@ -8,14 +8,14 @@ const navOptions = document.querySelectorAll(".nav-opts");
 //to display the menubar
 menuIcon.addEventListener("click", () => {
   // menuBox.classList.remove("");
-  menuBox.classList.remove("translate-x-[25rem]");
-  // menuBox.classList.add("-translate-x-[0rem]");
+  menuBox.classList.remove("translate-x-[27rem]");
+  menuBox.classList.add("-translate-x-[0rem]");
 });
 
 //to close the menu bar
 closeMenu.addEventListener("click", () => {
-  menuBox.classList.add("translate-x-[25rem]");
-  // menuBox.classList.remove("-translate-x-[0rem]");
+  menuBox.classList.add("translate-x-[27rem]");
+  menuBox.classList.remove("-translate-x-[0rem]");
 
   //to close the dropdown
   const dropDown = document.querySelectorAll(".nav-opts div");
@@ -33,6 +33,8 @@ navOptions.forEach((opt) => {
       const dropDown = e.target.nextElementSibling;
 
       //to close the dropdown
+
+      console.log(dropDown);
 
       if (getComputedStyle(dropDown).display === "flex") {
         dropDown.style.display = "none";
